@@ -1,4 +1,4 @@
-// Degree header for WGU - C867 - PA (2/11) - Ver. 0.1a - Last Edit 2020.03.24
+// Degree header for WGU - C867 - PA (2/11) - Ver. 0.5a - Last Edit 2020.03.31
 /*
 Man-Lung, Chau (Ricky)
 001314629
@@ -26,7 +26,7 @@ protected:
 	int		studentAge;
 	//vector<int> daysToComplete;	//(Maybe use Dynamic Vector)
 	int*	daysToComplete; 		//Pointers for array
-	Degree	degree;
+	Degree	degree;					//Can be removed from contructor if needed
 
 public:
 	//Constructors
@@ -53,17 +53,11 @@ public:
 	void			setEmailAddress			(string eAddress);
 	void			setStudentAge			(int sAge);
 	void			setDaysToComplete		(int daysToComplete[]);
-	virtual void	setDegreeType			(Degree degreeType) = 0;
+	//virtual void	setDegreeType			(Degree degreeType) = 0;
 
 	//Print
 	virtual void	print();
-	virtual void	printDegree();
 	virtual void	printEmailAddress();
-	//virtual void	printStudentID();
-	//virtual void	printFirstName();
-	//virtual void	printLastName();
-	//virtual void	printStudentAge();
-	//virtual void	printDaysToComplete();
 
 	
 };

@@ -19,6 +19,6 @@ enum Degree
 static const string degreeTypeString[] = 
 {
 	"SECURITY",
-	"NETWORK",
+	"NETWORK ",
 	"SOFTWARE" 
 };

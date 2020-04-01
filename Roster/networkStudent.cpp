@@ -1,4 +1,4 @@
-// Degree header for WGU - C867 - PA (7/11) - Ver. 0.4a - Last Edit 2020.03.24
+// Degree header for WGU - C867 - PA (7/11) - Ver. 0.5a - Last Edit 2020.03.31
 /*
 Man-Lung, Chau (Ricky)
 001314629
@@ -40,10 +40,12 @@ void networkStudent::setDegreeType(Degree degreeType)
 
 
 //Print
+/*
 void networkStudent::printDegree()
 {
 	this->Student::print();
 	cout << "NETWORK" << endl;
 }
+*/
 
 

@@ -1,4 +1,4 @@
-// Degree header for WGU - C867 - PA (3/11) - Ver. 0.1a - Last Edit 2020.03.24
+// Degree header for WGU - C867 - PA (3/11) - Ver. 0.5a - Last Edit 2020.03.31
 /*
 Man-Lung, Chau (Ricky)
 001314629
@@ -43,7 +43,6 @@ Student::Student(string sID, string fName, string lName, string eAddress, int sA
 //Destructor
 Student::~Student()
 {
-	//nullptr?
 }
 
 #pragma region Getters
@@ -105,7 +104,6 @@ void   Student::setDaysToComplete(int daysToComplete[])
 		this->daysToComplete = nullptr;
 		this->daysToComplete = new int[daysToCompleteSize];
 	}
-	//this->daysToComplete = new int[daysToCompleteSize];
 	for (int i = 0; i < 3; ++i) 
 	{
 		this->daysToComplete[i] = daysToComplete[i];
@@ -124,78 +122,11 @@ void Student::print() //Adjust what data to be shown
 	cout << "Last name: " << getLastName() << "\t";
 	cout << "Age: " << getStudentAge() << "\t";
 	cout << "Days In Course: {" << *courseday << ", " << *(courseday + 1) << ", " << *(courseday + 2) << "}" << "\t";
-	Student::printDegree();
-
-	/*
-	Student::printFirstName();
-	Student::printLastName();
-	Student::printStudentAge();
-	Student::printDaysToComplete();
-	Student::printDegree();
-	*/
+	cout << "Degree Program: " << degreeTypeString[getDegreeProgram()];
 }
-
-
-//void Student::printStudentID()
-//{
-//	cout <<  "Student ID: " << studentID << "	";
-//}
-//
-//void Student::printFirstName()
-//{
-//	cout <<  "First Name: " << firstName << "	";
-//}
-//
-//void Student::printLastName()
-//{
-//	cout <<  "Last Name: " << lastName << "	";
-//}
 
 void Student::printEmailAddress()
 {
-	cout <<  "E-Mail: " << emailAddress << "	";
+	cout <<  "E-Mail: " << getEmailAddress() << "	";
 }
-
-//void Student::printStudentAge()
-//{
-//	cout <<  "Age: " << studentAge << "	";
-//}
-//
-//void Student::printDaysToComplete()
-//{
-//	cout <<  "DaysInCourses: ";
-//
-//	for (int i = 0; i < sizeof(daysToComplete); i++)
-//	{
-//		cout << daysToComplete[i];
-//
-//		if (i < sizeof(daysToComplete) - 1) 
-//		{
-//			cout << ", ";
-//		}
-//	}
-//	cout << "	";
-//}
-
-void Student::printDegree()
-{
-	cout << "Degree Program: ";
-	switch (degree)
-	{
-	case SECURITY:
-		cout << "Security";
-		break;
-	case NETWORK:
-		cout << "Network ";
-		break;
-	case SOFTWARE:
-		cout << "Software";
-		break;
-	default:
-		cout << "Error!";
-		break;
-	}
-}
-
-
 #pragma endregion

@@ -1,5 +1,5 @@
-# WGU-C867-Roster
-Final submission for WGU - C867
+Roster App
+
 ![](https://github.com/Rickymcraft/WGU-C867-Roster/blob/master/Console-WGU-C867-Final.PNG)
 
 <h1>Objective</h1>
